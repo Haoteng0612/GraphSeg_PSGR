@@ -12,8 +12,12 @@ https://github.com/xuebinqin/U-2-Net
 If you find this project useful, please consider citing as follows:
 
 @article{jia2021psgr,
+
   title={PSGR: Pixel-wise Sparse Graph Reasoning for COVID-19 Pneumonia Segmentation in CT Images},
+  
   author={Jia, Haozhe and Tang, Haoteng and Ma, Guixiang and Cai, Weidong and Huang, Heng and Zhan, Liang and Xia, Yong},
+  
   journal={arXiv preprint arXiv:2108.03809},
+  
   year={2021}
 }
