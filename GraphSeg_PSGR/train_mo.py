@@ -31,9 +31,9 @@ class DataLoaderX(DataLoader):
 
 
 exp_name = 'GraphSeg'
-previous_save_path = os.path.join('/ocean/projects/cda190008p/htang4/ComputerVision_work/IJCAI_Journal/GraphSeg-mosmed-unet/model_save', exp_name, '')
-save_path = os.path.join('/ocean/projects/cda190008p/htang4/ComputerVision_work/IJCAI_Journal/GraphSeg-mosmed-unet/model_save', exp_name, datetime.now().strftime('%b%d_%H-%M-%S'))
-runs_path = os.path.join('/ocean/projects/cda190008p/htang4/ComputerVision_work/IJCAI_Journal/GraphSeg-mosmed-unet/runs', exp_name, datetime.now().strftime('%b%d_%H-%M-%S'))
+previous_save_path = os.path.join('', exp_name, '')
+save_path = os.path.join('', exp_name, datetime.now().strftime('%b%d_%H-%M-%S'))
+runs_path = os.path.join('', exp_name, datetime.now().strftime('%b%d_%H-%M-%S'))
 check_mkdir(save_path)
 check_mkdir(runs_path)
 writer = SummaryWriter(runs_path)
@@ -70,7 +70,7 @@ def main():
     parser.add_argument('--valid_list', type=str, default='valid_new0',
                         choices=('valid_new0', 'valid_new1', 'valid_new2',
                                  'valid_new3', 'valid_new4'))
-    parser.add_argument('--datadir', type=str, default='/ocean/projects/cda190008p/htang4/ComputerVision_work/IJCAI_Journal/MosMedData/slices')
+    parser.add_argument('--datadir', type=str, default='')
 
     args = parser.parse_args()
 
