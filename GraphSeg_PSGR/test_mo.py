@@ -31,9 +31,9 @@ class DataLoaderX(DataLoader):
 
 
 exp_name = 'GraphSeg'
-previous_save_path = os.path.join('/media/userdisk0/hzjia/model_save', exp_name, '')
-save_path = os.path.join('/media/userdisk0/hzjia/model_save', exp_name, datetime.now().strftime('%b%d_%H-%M-%S'))
-runs_path = os.path.join('/media/userdisk0/hzjia/runs', exp_name, datetime.now().strftime('%b%d_%H-%M-%S'))
+previous_save_path = os.path.join('', exp_name, '')
+save_path = os.path.join('', exp_name, datetime.now().strftime('%b%d_%H-%M-%S'))
+runs_path = os.path.join('', exp_name, datetime.now().strftime('%b%d_%H-%M-%S'))
 check_mkdir(save_path)
 check_mkdir(runs_path)
 writer = SummaryWriter(runs_path)
@@ -66,7 +66,7 @@ def main():
     parser.add_argument('--resume', default='/media/userdisk0/hzjia/model_save/GraphSeg/Jan03_06-46-28/epoch_210_loss_0.659597_dice_0.698001')
     parser.add_argument('--valid_list', type=str, default='valid_4', choices=('valid_0', 'valid_1', 'valid_2',
                                                                               'valid_3', 'valid_4'))
-    parser.add_argument('--datadir', type=str, default='/media/userdisk0/hzjia/Data/MosMedData/slices')
+    parser.add_argument('--datadir', type=str, default='')
 
     args = parser.parse_args()
 
